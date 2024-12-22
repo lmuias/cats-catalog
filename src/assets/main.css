@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import './base.css';
+
+
+#app {
+  font-weight: normal;
+}
+
+
+@layer utilities {
+  .caret-indigo {
+    caret-color: #6E72EC;
+  }
+
+  .form-label {
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+  }
+
+  .form-input {
+    @apply bg-[#EBECFF] border border-transparent outline-none font-medium text-gray-700 text-sm rounded-lg block w-full p-2.5 dark:placeholder-gray-400 dark:text-white;
+  }
+
+  .input-normal {
+    @apply focus:ring-[#6E72EC] focus:border-[#6E72EC] dark:focus:ring-[#6E72EC] dark:focus:border-[#6E72EC]
+  }
+
+  .list-page {
+    @apply grid gap-x-5 gap-y-10 w-full;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @screen md {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    @screen lg {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+}
+
+
+li {
+  list-style: none;
+}
