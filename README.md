@@ -42,5 +42,6 @@ cd cats-catalog
     npm install
 
 ### Running the application
+
   ```sh
 npm run dev
