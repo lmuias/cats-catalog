@@ -29,13 +29,11 @@ To get started with the Cats Catalog, follow these steps:
 
 1. Clone the repository to your local machine:
 
-  ```sh
-git clone <repository-url>
+    git clone <repository-url>
 
 2.  Navigate to the project directory:
 
-  ```sh
-cd cats-catalog
+    cd cats-catalog
 
 3. Install the dependencies:
 
@@ -43,5 +41,4 @@ cd cats-catalog
 
 ### Running the application
 
-  ```sh
-npm run dev
+    npm run dev
