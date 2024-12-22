@@ -31,7 +31,6 @@ To get started with the Cats Catalog, follow these steps:
 
   ```sh
 git clone <repository-url>
-
 2.  Navigate to the project directory:
 
   ```sh
