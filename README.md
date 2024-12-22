@@ -29,8 +29,7 @@ To get started with the Cats Catalog, follow these steps:
 
 1. Clone the repository to your local machine:
 
-  ```sh
-git clone <repository-url>
+    git clone 
 
 2.  Navigate to the project directory:
 
