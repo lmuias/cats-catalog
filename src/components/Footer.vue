@@ -3,7 +3,7 @@ import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 </script>
 
 <template>
-  <div class="bg-[#121212] text-white px-5 py-8 lg:px-[72px]">
+  <footer class="bg-[#121212] text-white px-5 py-8 lg:px-[72px]">
     <div class="flex flex-col items-center pb-14 gap-10 md:flex-row md:justify-between">
       <li>
         <RouterLink to="/" class="block h-auto transition-transform hover:scale-95">
@@ -56,7 +56,7 @@ import { ChevronDownIcon } from '@heroicons/vue/20/solid'
         <ChevronDownIcon class="-mr-1 size-6 text-[#FFFFFF]" aria-hidden="true" />
       </p>
     </div>
-  </div>
+  </footer>
 </template>
 
 <style>

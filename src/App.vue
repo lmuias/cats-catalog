@@ -29,22 +29,15 @@
 
 
 <template>
-  <header>
-    <Header></Header>
-  </header>
+  <Header></Header>
 
-  <main class="main">
+  <main class="max-w-[1024px] my-0 mx-auto px-5 pb-14 xl:max-w-[1330px] pt-14 min-h-[55vh]">
     <RouterView v-if="!isLoading"/>
     <Loader v-else />
   </main>
 
-  <footer class="">
-    <Footer></Footer>
-  </footer>
+  <Footer></Footer>
 </template>
 
 <style scoped>
-  .main {
-    @apply max-w-[1024px] my-0 mx-auto px-5 pb-14 xl:max-w-[1330px] pt-14 min-h-[55vh];
-  }
 </style>

@@ -11,7 +11,8 @@
     <RouterLink
       to="/"
       class="text-white transition-colors bg-[#6E72EC] hover:bg-[#343675] rounded-md px-3 py-2 mt-4"
-      >Go Back</RouterLink
     >
+      Go Back
+    </RouterLink>
   </section>
 </template>

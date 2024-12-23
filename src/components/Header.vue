@@ -22,30 +22,33 @@ const logOut = () => {
 </script>
 
 <template>
-  <nav class="w-full bg-[#EBECFF]">
-    <ul class="flex justify-between items-center gap-5 py-3 px-5 lg:px-[72px] relative">
-      <li>
-        <RouterLink to="/" class="block h-auto transition-transform hover:scale-95">
-          <img src="@/assets/logo.png" alt="Logo" />
-        </RouterLink>
-      </li>
-      <li v-if="username" class="avatar" @click="visibleLog = !visibleLog">
-        {{ username[0] }}
-      </li>
-      <button
-        v-if="visibleLog"
-        type="button"
-        @click="logOut"
-        class="absolute border-2 text-[#434343] cursor-pointer border-white shadow-md bg-[#EBECFF] py-3 px-4 rounded-lg w-[160px] -bottom-[60px] right-20 transition-colors hover:text-[#6E72EC] hover:bg-[#D6D8FF]"
+  <header>
+    <nav class="w-full bg-[#EBECFF]">
+      <ul class="flex justify-between items-center gap-5 py-3 px-5 lg:px-[72px] relative">
+        <li>
+          <RouterLink to="/" class="block h-auto transition-transform hover:scale-95">
+            <img src="@/assets/logo.png" alt="Logo" />
+          </RouterLink>
+        </li>
+        <li 
+          v-if="username" 
+          class="w-14 h-14 rounded-full bg-indigo-500 flex items-center justify-center text-3xl text-white cursor-pointer transition-transform hover:scale-95" 
+          @click="visibleLog = !visibleLog"
         >
-        <p class="text-lg">Log out</p>
-      </button>
-    </ul>
-  </nav>
+          {{ username[0] }}
+        </li>
+        <button
+          v-if="visibleLog"
+          type="button"
+          @click="logOut"
+          class="absolute border-2 text-[#434343] cursor-pointer border-white shadow-md bg-[#EBECFF] py-3 px-4 rounded-lg w-[160px] -bottom-[60px] right-20 transition-colors hover:text-[#6E72EC] hover:bg-[#D6D8FF]"
+          >
+          <p class="text-lg">Log out</p>
+        </button>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-  .avatar {
-    @apply w-14 h-14 rounded-full bg-indigo-500 flex items-center justify-center text-3xl text-white cursor-pointer transition-transform hover:scale-95;
-  }
 </style>
